@@ -4,7 +4,7 @@
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "scripts": {
-    "start:dev": "nodemon --ext js,ts,json,env --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' src/main.ts",
+    "check": "node --experimental-specifier-resolution=node --loader ts-node/esm src/main.ts",
     "prepare": "husky install",
     "build": "tsc --project tsconfig.build.json",
     "build:clean": "rm -rf tsconfig.build.tsbuildinfo && rm -rf ./dist",
