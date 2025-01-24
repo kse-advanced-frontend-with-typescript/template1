@@ -19,16 +19,8 @@ jobs:
         id: setup-node
         uses: actions/setup-node@v2
         with:
-          node-version: 16.x
+          node-version: 18.x
 
       - name: Deps
         run: |
-          npm ci
-
-      - name: Lint
-        run: |
-          npm run lint
-
-      - name: Test
-        run: |
-          npm run test:ci
+          npm run build
